@@ -1,28 +1,53 @@
-# Create T3 App
+# Sedaro Nano
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+The tiniest possible mockup of our system
 
-## What's next? How do I make an app with this?
+## Goal
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+The goal of this mini-project is to gain a better understanding of your ability to **be creative**, **think through problems**, and **solve relevant challenges** related to the engineering roles at Sedaro. This is an opportunity for you to show off your personal strengths. Don't focus on the simple contributions and instead aim to really impress us. Get creative, the prompt is intentionally very open-ended.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Within the next `7` days, attempt the following mini-project and return your solution containing the full project (less anything that would be .gitignored such as `node_modules`) and any notes on how to setup and run your specific solution. As important as your solution, we are interested in understanding your thought process and your ability to clearly communicate your approach so a writeup may also be included.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Please note that if you end up getting to a solution that you aren't happy with or that is a dead end, document why and we will call that good enough. Please don't invest too much time. A writeup of why a solution is insufficient and how you might approach it differently often tells us what we need to know.
 
-## Learn More
+If you have any questions or issues while you work through this problem or if you get stuck, please contact Bas Welsh at sebastian.welsh@sedarotech.com.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Setup
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1. Clone this repository.
+   - Please note that **only** cloning via HTTPS is supported
+   - Please **do not** commit changes to any branch of this repository. If you would like to use git, you may fork this repository to create a private repo of your own
+2. Run
+   - Using a Jupyter-friendly IDE, "Run All" code cells in `sim.ipynb` to produce a `data.js` file
+   - Open `index.html` in a browser and you should see a plot like the one below
+   - That's it! ✅
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Your Task
 
-## How do I deploy this?
+**Review the few files that make up Sedaro Nano, figure out how it works, and then add to it in whatever way <u>best</u> shows off your unique skills + creativity!**
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Some Project Ideas
+
+- Simulator:
+  - Improve the Q-Range KV Store data structure
+  - Make the system more generic/extensible
+  - Make it fast
+- Front End:
+  - Set up a framework like React
+  - Add cool visualizations and interactivity
+  - Improve efficiency/caching
+- Data:
+  - Utilize a better persistence layer than a js file
+  - Do some statistical analysis on the data
+  - Set up background jobs to preprocess data
+- Modeling & Simulation:
+  - Improve the numerical stability of the simulation functions
+  - Implement additional modeling and simulation scope
+  - Analyze the sensitivity to initial conditions
+- Etc:
+  - Port to a language of your choice
+  - Set up testing
+  - Containerize
+- Whatever you want; these are just suggestions to get you thinking
+
+![](./screenshot.png)
