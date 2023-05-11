@@ -5,6 +5,8 @@ import Head from "next/head";
 
 import DropDownMap from "~/components/DropDownMap";
 
+
+
 const Header: React.FC = () => {
 	return (
 		<header className="w-full py-4 px-8  bg-gradient-to-b from-white to-[#3f4243] shadow-md fixed top-0 left-0 z-50">
