@@ -18,13 +18,15 @@ const Header: React.FC = () => {
 				<div className="text-xl font-semibold flex items-center">
 					<div className="w-10 h-10 rounded-full overflow-hidden">
 						{user?.firstName && (
-							// I don't want to set up the height and width of the Image right now.
-							// eslint-disable-next-line @next/next/no-img-element
-							<img
-								src={user.profileImageUrl}
-								alt="User Profile"
-								className="w-full h-full object-cover"
-							/>
+							<Link href="/">
+								{/* I don't want to set up the height and width of the Image right now. */}
+								{/* eslint-disable-next-line @next/next/no-img-element */}
+								<img
+									src={user.profileImageUrl}
+									alt="User Profile"
+									className="w-full h-full object-cover"
+								/>
+							</Link>
 						)}
 					</div>
 					{user && (
@@ -44,7 +46,7 @@ const Header: React.FC = () => {
 					</SignedOut>
 					<SignedIn>
 						<button
-							className="bg-red-500 hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 text-white py-2 px-4"
+							className="bg-red-500 hover:shadow-xl hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 text-white py-2 px-4"
 							onClick={handleSignOut}
 						>
 							Sign Out
