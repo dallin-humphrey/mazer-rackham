@@ -9,7 +9,7 @@ const DropDownItem: React.FC<{ title: string; description: string; isOpen: boole
 	toggleOpen,
 }) => {
 	const calculatePadding = (description: string) => {
-		const charsPerLine = 40;
+		const charsPerLine = 70;
 		const lineHeight = 1.5;
 		const marginBottom = 0.5;
 		const minPadding = 4;
@@ -21,16 +21,16 @@ const DropDownItem: React.FC<{ title: string; description: string; isOpen: boole
 	const paddingBottom = isOpen ? `${calculatePadding(description)}rem` : "0";
 
 	return (
-		<div className={`mb-2 relative transition-padding duration-1000`} style={{ paddingBottom }}>
-			<button
+		<div className={`mb-2 relative transition-padding duration-1000 w-full cursor-pointer`} style={{ paddingBottom }}>
+			<div
 				onClick={toggleOpen}
-				className="w-72 py-2 px-4 border-2 border-gray-300 rounded-md text-left flex justify-between"
+				className="py-2 px-4 border-2 border-gray-300 rounded-md text-left flex justify-between"
 			>
 				<div>{title}</div>
-				<div className="flex items-center mx-4">
+				<div className="pr-5">
 					<RotatingIcon iconColor="white" open={isOpen} />
 				</div>
-			</button>
+			</div>
 			<div
 				className={`absolute left-0 overflow-hidden transition-height duration-1000 ${isOpen ? "h-auto" : "h-0"
 					}`}
