@@ -36,7 +36,7 @@ const Header: React.FC = () => {
 				<div>
 					<SignedOut>
 						<button
-							className="bg-blue-500 hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 duration-300 text-white py-2 px-4"
+							className="bg-blue-500  hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 text-white py-2 px-4"
 							onClick={() => openSignIn()}
 						>
 							Sign In
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
 					</SignedOut>
 					<SignedIn>
 						<button
-							className="bg-red-500 hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 duration-300 text-white py-2 px-4"
+							className="bg-red-500 hover:shadow-md hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0 text-white py-2 px-4"
 							onClick={handleSignOut}
 						>
 							Sign Out

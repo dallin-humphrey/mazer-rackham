@@ -3,13 +3,10 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Header from "~/components/Header";
 import DropDownMap from "~/components/DropDownMap";
-import { SignedIn, SignedOut, useUser } from "@clerk/nextjs";
-import { useRouter } from "next/router";
-import LoginRequired from "~/components/LoginRequired";
+import { SignedIn, useUser } from "@clerk/nextjs";
 
 const Home: NextPage = () => {
 	const { user } = useUser();
-	const router = useRouter();
 
 	console.log("user", user);
 
@@ -30,9 +27,6 @@ const Home: NextPage = () => {
 			<Header />
 			<main className="flex min-h-screen flex-col items-center justify-center bg-slate-500 pt-20">
 				<div className="w-1/2">
-					<SignedOut>
-						<LoginRequired />
-					</SignedOut>
 					<SignedIn>
 						<ProtectedContent />
 					</SignedIn>
